@@ -10,7 +10,7 @@ create table authors(
     updated_at timestamp not null,
     name varchar(255) not null,
     surname varchar(255) not null,
-    country_id bigint references countries
+    country_id bigint references countries(id)
         on delete cascade
 );
 
@@ -20,7 +20,7 @@ create table books (
     updated_at timestamp not null,
     name varchar(255) not null,
     category varchar(255) not null,
-    author_id bigint references authors
+    author_id bigint references authors(id)
         on delete cascade,
     state varchar(255) not null,
     available_copies integer not null
