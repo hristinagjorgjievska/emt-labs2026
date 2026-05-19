@@ -1,0 +1,13 @@
+package mk.ukim.finki.emt.laba1;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class LabA1Application {
+
+    public static void main(String[] args) {
+        SpringApplication.run(LabA1Application.class, args);
+    }
+
+}
