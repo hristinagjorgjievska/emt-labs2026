@@ -1,4 +1,4 @@
-package mk.ukim.finki.emt.laba1.model;
+package mk.ukim.finki.emt.laba1.model.domain;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -8,7 +8,7 @@ import lombok.Data;
 
 @Data
 @MappedSuperclass
-public class BaseEntity { //site modeli imaat ID i zatoa samo ID imame vo nea
+public abstract class BaseEntity { //site modeli imaat ID i zatoa samo ID imame vo nea
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

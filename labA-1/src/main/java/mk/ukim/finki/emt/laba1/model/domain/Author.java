@@ -1,4 +1,4 @@
-package mk.ukim.finki.emt.laba1.model;
+package mk.ukim.finki.emt.laba1.model.domain;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;

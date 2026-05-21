@@ -1,6 +1,7 @@
-package mk.ukim.finki.emt.laba1.model;
+package mk.ukim.finki.emt.laba1.model.domain;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Positive;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import mk.ukim.finki.emt.laba1.model.enums.Category;
@@ -25,4 +26,12 @@ public class Book extends BaseAuditableEntity{
     private State state;
 
     private Integer availableCopies;
+
+    public Book(String name, Category category, Author author, State state, @Positive Integer availableCopies) {
+        this.name = name;
+        this.category = category;
+        this.author = author;
+        this.state = state;
+        this.availableCopies = availableCopies;
+    }
 }
