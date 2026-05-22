@@ -22,4 +22,10 @@ public class Accommodation extends BaseAuditableEntity{
     private Integer numRooms;
 
     private State state;
+
+    public Accommodation() {}
+
+    public Accommodation(String name, Category category, Host host, Integer numRooms) {
+        super();
+    }
 }

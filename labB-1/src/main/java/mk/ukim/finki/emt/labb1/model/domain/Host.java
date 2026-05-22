@@ -16,4 +16,12 @@ public class Host extends BaseAuditableEntity{
 
     @ManyToOne
     private Country country;
+
+    public Host() {
+
+    }
+
+    public Host(String name, String surname, Country country) {
+        super();
+    }
 }

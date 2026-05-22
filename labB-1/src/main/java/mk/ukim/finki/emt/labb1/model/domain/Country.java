@@ -12,4 +12,10 @@ public class Country extends BaseEntity{
     private String name;
 
     private String continent;
+
+    public Country(){}
+
+    public Country(String name, String continent) {
+        super();
+    }
 }
