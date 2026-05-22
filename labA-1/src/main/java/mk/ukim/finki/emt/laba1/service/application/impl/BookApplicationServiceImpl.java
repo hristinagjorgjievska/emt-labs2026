@@ -10,7 +10,7 @@ import mk.ukim.finki.emt.laba1.service.domain.BookService;
 import org.springframework.stereotype.Service;
 
 @Service
-public class BookApplicationServiceImpl implements BookApplicationService {
+public class  BookApplicationServiceImpl implements BookApplicationService {
 
     private final BookService bookService;
     private final AuthorService authorService; //bidejki klientot prakja samo authorId, a tuka preku findBookById vo repository, kje go najdeme koj e Author
