@@ -23,6 +23,8 @@ public class Accommodation extends BaseAuditableEntity{
 
     private State state;
 
+    private Boolean isRented = false;
+
     public Accommodation() {}
 
     public Accommodation(String name, Category category, Host host, Integer numRooms) {
